@@ -10,6 +10,7 @@
     /* Slightly lighter than bg for contrast */
     --surface-glass: rgba(15, 23, 42, 0.6);
     --border-color: #1E293B;
+    --invert-value: 1;
 
     --text-primary: #F8FAFC;
     --text-secondary: #CBD5E1;
@@ -99,4 +100,9 @@
 
 [data-theme="dark"] .navbar-brand {
     color: #A78BFA !important;
+}
+
+/* Theme Toggle Visibility override */
+[data-theme="dark"] #theme-toggle {
+    color: var(--text-primary) !important;
 }

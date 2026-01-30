@@ -51,14 +51,14 @@
     <!-- Article Header -->
     <header class="section-padding text-center pb-4 mt-5">
         <div class="container fade-up">
-            <span class="badge bg-primary mb-3">Songwriting</span>
-            <h1 class="display-4 fw-bold mb-4">How to Overcome Writer's Block: 5 Proven Techniques</h1>
+            <span class="badge bg-primary mb-3" id="blog-category">Songwriting</span>
+            <h1 class="display-4 fw-bold mb-4" id="blog-title">Loading...</h1>
             <div class="d-flex align-items-center justify-content-center text-secondary-color">
                 <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=64&h=64&q=80"
-                    class="rounded-circle me-2" width="40" height="40">
-                <span class="fw-bold me-3">Sarah Jenkins</span>
+                    class="rounded-circle me-2" width="40" height="40" id="blog-author-img">
+                <span class="fw-bold me-3" id="blog-author">Loading...</span>
                 <span>•</span>
-                <span class="ms-3">Jan 24, 2026</span>
+                <span class="ms-3" id="blog-date">Loading...</span>
             </div>
         </div>
     </header>
@@ -66,58 +66,132 @@
     <article class="container pb-5">
         <div class="row justify-content-center">
             <div class="col-lg-8 fade-up">
-                <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80"
-                    class="img-fluid rounded-4 shadow mb-5" alt="Cover Image">
+                <img src="" class="img-fluid rounded-4 shadow mb-5 w-100" alt="Cover Image" id="blog-image">
 
-                <div class="prose">
-                    <p class="lead mb-4">We've all been there. You sit down with your guitar or open your DAW, ready to
-                        create the next masterpiece, and... nothing. The silence is deafening. Writer's block is the
-                        enemy of every creative, but it doesn't have to stop you.</p>
+                <div class="prose" id="blog-content">
+                    <!-- Content will be injected here -->
+                </div>
 
-                    <h3 class="fw-bold mt-5 mb-3">1. Change Your Environment</h3>
-                    <p class="text-secondary-color">Sometimes, a change of scenery is all you need. If you usually write
-                        in your bedroom, try going to a park or a coffee shop. New sights and sounds can trigger
-                        different emotional responses and lyrical ideas.</p>
+                <!-- Back to Blog CTA -->
+                <div class="mt-5 pt-4 text-center border-top">
+                    <a href="blog.html" class="btn btn-outline-primary rounded-pill px-4 hover-lift">
+                        <i class="bi bi-arrow-left me-2"></i> Back to Blog
+                    </a>
+                </div>
 
-                    <h3 class="fw-bold mt-5 mb-3">2. The "Object Writing" Exercise</h3>
-                    <p class="text-secondary-color">Popularized by Berklee professor Pat Pattison, this exercise
-                        involves picking an object and writing about it for 10 minutes using all seven senses (sight,
-                        hearing, smell, taste, touch, organic, and kinesthetic). Don't worry about rhyming or making
-                        sense—just write.</p>
+                <hr class="my-5">
 
-                    <h3 class="fw-bold mt-5 mb-3">3. Collaborate with Someone New</h3>
-                    <p class="text-secondary-color">Working with another musician forces you out of your comfort zone.
-                        They might suggest a chord change you never would have thought of, or a melody that takes the
-                        song in a completely new direction. Use <a href="index.html">SongStart</a> to find a
-                        collaborator today.</p>
-
-                    <blockquote class="blockquote glass-card p-4 my-5 border-start border-4 border-primary">
-                        <p class="mb-0 fst-italic">"Inspiration is for amateurs. The rest of us just show up and get to
-                            work."</p>
-                        <footer class="blockquote-footer mt-2">Chuck Close</footer>
-                    </blockquote>
-
-                    <h3 class="fw-bold mt-5 mb-3">4. Limit Your Tools</h3>
-                    <p class="text-secondary-color">Infinite possibilities can be paralyzing. Try writing a song using
-                        only two chords, or only using samples from a specific decade. Constraints breed creativity.</p>
-
-                    <hr class="my-5">
-
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div class="d-flex gap-2">
-                            <span class="badge bg-surface text-secondary border">Creativity</span>
-                            <span class="badge bg-surface text-secondary border">Tips</span>
-                        </div>
-                        <div class="d-flex gap-3">
-                            <a href="#" class="text-secondary-color"><i class="bi bi-facebook"></i></a>
-                            <a href="#" class="text-secondary-color"><i class="bi bi-twitter"></i></a>
-                            <a href="#" class="text-secondary-color"><i class="bi bi-linkedin"></i></a>
-                        </div>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex gap-2">
+                        <span class="badge bg-surface text-secondary border">Creativity</span>
+                        <span class="badge bg-surface text-secondary border">Tips</span>
+                    </div>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-secondary-color"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-secondary-color"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-secondary-color"><i class="bi bi-linkedin"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </article>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            // Default to ID 1 if not present
+            const blogId = params.get('id') || '1';
+
+            // Blog Data Source
+            const blogPosts = {
+                '1': {
+                    title: "How to Overcome Writer's Block: 5 Proven Techniques",
+                    category: "Songwriting",
+                    author: "Sarah Jenkins",
+                    date: "Jan 24, 2026",
+                    authorImg: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=64&h=64&q=80",
+                    image: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
+                    content: `
+                        <p class="lead mb-4">We've all been there. You sit down with your guitar or open your DAW, ready to create the next masterpiece, and... nothing. The silence is deafening. Writer's block is the enemy of every creative, but it doesn't have to stop you.</p>
+                        <h3 class="fw-bold mt-5 mb-3">1. Change Your Environment</h3>
+                        <p class="text-secondary-color">Sometimes, a change of scenery is all you need. If you usually write in your bedroom, try going to a park or a coffee shop. New sights and sounds can trigger different emotional responses and lyrical ideas.</p>
+                        <h3 class="fw-bold mt-5 mb-3">2. The "Object Writing" Exercise</h3>
+                        <p class="text-secondary-color">Popularized by Berklee professor Pat Pattison, this exercise involves picking an object and writing about it for 10 minutes using all seven senses. Don't worry about rhyming or making sense—just write.</p>
+                        <h3 class="fw-bold mt-5 mb-3">3. Collaborate with Someone New</h3>
+                        <p class="text-secondary-color">Working with another musician forces you out of your comfort zone. They might suggest a chord change you never would have thought of. Use SongStart to find a collaborator today.</p>
+                        <blockquote class="blockquote glass-card p-4 my-5 border-start border-4 border-primary"><p class="mb-0 fst-italic">"Inspiration is for amateurs. The rest of us just show up and get to work."</p><footer class="blockquote-footer mt-2">Chuck Close</footer></blockquote>
+                        <h3 class="fw-bold mt-5 mb-3">4. Limit Your Tools</h3>
+                        <p class="text-secondary-color">Infinite possibilities can be paralyzing. Try writing a song using only two chords, or only using samples from a specific decade. Constraints breed creativity.</p>
+                    `
+                },
+                '2': {
+                    title: "Mixing Vocals for Beginners",
+                    category: "Production",
+                    author: "Mike Chen",
+                    date: "Feb 02, 2026",
+                    authorImg: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=64&h=64&q=80",
+                    image: "https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?auto=format&fit=crop&w=1200&q=80",
+                    content: `
+                        <p class="lead mb-4">Vocals are the most important element of any modern mix. If they don't sit right, the track won't connect. Here is a simplified workflow to get professional results.</p>
+                        <h3 class="fw-bold mt-5 mb-3">1. EQ Cleaning</h3>
+                        <p class="text-secondary-color">Start by rolling off the low end (below 80-100Hz) to remove rumble. Use a wide bell cut around 300-500Hz if the vocal sounds "muddy" or boxy.</p>
+                        <h3 class="fw-bold mt-5 mb-3">2. Compression</h3>
+                        <p class="text-secondary-color">Compression evens out the dynamics. Aim for 3-5dB of gain reduction on the loudest peaks. A fast attack tames transients, while a medium attack lets some punch through.</p>
+                        <h3 class="fw-bold mt-5 mb-3">3. Saturation</h3>
+                        <p class="text-secondary-color">Add a tiny bit of tape or tube saturation to give the vocal some warmth and "grit". This helps it cut through dense mixes without just turning up the volume.</p>
+                        <h3 class="fw-bold mt-5 mb-3">4. Reverb & Delay</h3>
+                        <p class="text-secondary-color">Use a short plate reverb for glue and a 1/4 or 1/8 note delay for space. Keep the returns lower than you think you need them!</p>
+                    `
+                },
+                '3': {
+                    title: "Understanding Music Royalties",
+                    category: "Industry",
+                    author: "Jessica Lee",
+                    date: "Mar 10, 2026",
+                    authorImg: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=64&h=64&q=80",
+                    image: "https://images.unsplash.com/photo-1510915361894-db8b60106cb1?auto=format&fit=crop&w=1200&q=80",
+                    content: `
+                        <p class="lead mb-4">The music business is confusing. Streaming has changed how we get paid, but the fundamental royalty streams remain important to understand so you don't leave money on the table.</p>
+                        <h3 class="fw-bold mt-5 mb-3">1. Mechanical Royalties</h3>
+                        <p class="text-secondary-color">These are generated whenever a song is reproduced (CDs, vinyl, downloads, and streaming). In the US, the Harry Fox Agency handles these for physical, while the MLC collects for digital.</p>
+                        <h3 class="fw-bold mt-5 mb-3">2. Performance Royalties</h3>
+                        <p class="text-secondary-color">Earned when a song is played publicly (Radio, TV, Live Venues, Restaurants, Spotify streams). PROs like ASCAP, BMI, and SESAC collect these.</p>
+                        <h3 class="fw-bold mt-5 mb-3">3. Sync Licensing</h3>
+                        <p class="text-secondary-color">This is often the most lucrative. It involves licensing your music for video (TV shows, movies, ads, games). You get an upfront fee plus potential backend royalties.</p>
+                    `
+                },
+                '4': {
+                    title: "Top 10 Chord Progressions",
+                    category: "Inspiration",
+                    author: "David Chen",
+                    date: "Mar 15, 2026",
+                    authorImg: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=64&h=64&q=80",
+                    image: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=1200&q=80",
+                    content: `
+                        <p class="lead mb-4">Stuck in a loop? Different chord progressions evoke different emotions. Here are a few timeless progressions to try in your next session.</p>
+                        <h3 class="fw-bold mt-5 mb-3">1. The "Pop" Progression (I - V - vi - IV)</h3>
+                        <p class="text-secondary-color">Used in thousands of hits from "Let It Be" to "Someone Like You". It feels resolute and optimistic.</p>
+                        <h3 class="fw-bold mt-5 mb-3">2. The "Doo-Wop" (I - vi - IV - V)</h3>
+                        <p class="text-secondary-color">Classic 50s sound. Great for ballads and nostalgic tracks. Examples: "Stand By Me", "Unchained Melody".</p>
+                        <h3 class="fw-bold mt-5 mb-3">3. The "Sensitive Female" (vi - IV - I - V)</h3>
+                        <p class="text-secondary-color">Starts on the minor 6th, giving it a more pensive, emotional feel. Huge in modern pop and EDM (e.g., "Cheap Thrills", "Complicated").</p>
+                    `
+                }
+            };
+
+            const post = blogPosts[blogId] || blogPosts['1'];
+
+            // Populate DOM
+            document.title = post.title + " - SongStart Blog";
+            document.getElementById('blog-category').textContent = post.category;
+            document.getElementById('blog-title').textContent = post.title;
+            document.getElementById('blog-author').textContent = post.author;
+            document.getElementById('blog-date').textContent = post.date;
+            document.getElementById('blog-author-img').src = post.authorImg;
+            document.getElementById('blog-image').src = post.image;
+            document.getElementById('blog-content').innerHTML = post.content;
+        });
+    </script>
 
     <!-- Related Posts -->
     <section class="section-padding bg-surface">
