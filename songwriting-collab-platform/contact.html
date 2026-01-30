@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - SongStart</title>
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top glass-card mx-3 mt-3">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="index.html"><i
+                    class="bi bi-music-note-beamed me-2"></i> SongStart</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html">Home Default</a></li>
+                            <li><a class="dropdown-item" href="home-2.html">Home Variant</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="features.html">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="how-it-works.html">How It Works</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="community.html">Community</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <button class="btn btn-link text-body p-0" id="theme-toggle"><i
+                            class="bi bi-moon-stars-fill fs-5"></i></button>
+                    <a href="login.html" class="btn btn-outline-primary btn-sm d-none d-lg-block">Log In</a>
+                    <a href="signup.html" class="btn btn-primary btn-sm d-none d-lg-block">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section text-center pb-0">
+        <div class="container fade-up">
+            <h1 class="display-4 fw-bold">Get In Touch</h1>
+            <p class="lead text-secondary-color mx-auto" style="max-width: 600px;">Have questions about the platform or
+                need support? We're here to help.</p>
+        </div>
+    </header>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 fade-up">
+                    <div class="glass-card p-4 h-100">
+                        <h4 class="mb-4">Send us a Message</h4>
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label text-secondary-color">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="John Doe">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label text-secondary-color">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label text-secondary-color">Subject</label>
+                                <select class="form-select" id="subject">
+                                    <option>General Inquiry</option>
+                                    <option>Support / Technical Issue</option>
+                                    <option>Billing</option>
+                                    <option>Partnership</option>
+                                </select>
+                            </div>
+                            <div class="mb-4">
+                                <label for="message" class="form-label text-secondary-color">Message</label>
+                                <textarea class="form-control" id="message" rows="5"
+                                    placeholder="How can we help?"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6 fade-up">
+                    <div class="ps-lg-4">
+                        <h4 class="mb-4">Contact Information</h4>
+                        <div class="d-flex mb-4">
+                            <div class="fs-4 text-primary-color me-3"><i class="bi bi-geo-alt-fill"></i></div>
+                            <div>
+                                <h6 class="mb-1">Headquarters</h6>
+                                <p class="text-secondary-color">123 Music Row<br>Nashville, TN 37203<br>United States
+                                </p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class="fs-4 text-primary-color me-3"><i class="bi bi-envelope-fill"></i></div>
+                            <div>
+                                <h6 class="mb-1">Email</h6>
+                                <p class="text-secondary-color">support@songstart.com<br>hello@songstart.com</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class="fs-4 text-primary-color me-3"><i class="bi bi-phone-fill"></i></div>
+                            <div>
+                                <h6 class="mb-1">Phone</h6>
+                                <p class="text-secondary-color">+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+
+                        <div class="mt-5">
+                            <h6 class="mb-3">Follow Us</h6>
+                            <div class="d-flex gap-3">
+                                <a href="#" class="btn btn-outline-secondary rounded-circle p-2"
+                                    style="width:40px; height:40px;"><i class="bi bi-twitter"></i></a>
+                                <a href="#" class="btn btn-outline-secondary rounded-circle p-2"
+                                    style="width:40px; height:40px;"><i class="bi bi-instagram"></i></a>
+                                <a href="#" class="btn btn-outline-secondary rounded-circle p-2"
+                                    style="width:40px; height:40px;"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="mt-5 rounded-4 overflow-hidden shadow-sm fade-up"
+                            style="height: 300px; transition-delay: 0.1s;">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3221.3653112444085!2d-86.79326848452586!3d36.15555438008639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886466f96615f7bf%3A0x629577953259837a!2sMusic%20Row%2C%20Nashville%2C%20TN!5e0!3m2!1sen!2sus!4v1629819782534!5m2!1sen!2sus"
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer mt-auto">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="navbar-brand d-block mb-3" href="#">
+                        <i class="bi bi-music-note-beamed me-2"></i> SongStart
+                    </a>
+                    <p class="text-secondary-color">Empowering songwriters and producers to collaborate seamlessly
+                        globally.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="text-secondary-color fs-5"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-secondary-color fs-5"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-secondary-color fs-5"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-2">
+                    <h5>Platform</h5>
+                    <a href="features.html" class="footer-link">Features</a>
+                    <a href="pricing.html" class="footer-link">Pricing</a>
+                    <a href="how-it-works.html" class="footer-link">How it Works</a>
+                    <a href="community.html" class="footer-link">Community</a>
+                </div>
+                <div class="col-md-6 col-lg-2">
+                    <h5>Company</h5>
+                    <a href="about.html" class="footer-link">About Us</a>
+                    <a href="blog.html" class="footer-link">Blog</a>
+                    <a href="contact.html" class="footer-link">Contact</a>
+                    <a href="#" class="footer-link">Careers</a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <h5>Stay Updated</h5>
+                    <p class="text-secondary-color fs-sm">Subscribe to our newsletter for songwriting tips.</p>
+                    <form class="d-flex gap-2">
+                        <input type="email" class="form-control" placeholder="Email address">
+                        <button class="btn btn-primary">Join</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-top border-light mt-5 pt-4 text-center text-secondary-color">
+                <small>&copy; 2026 SongStart Inc. All rights reserved.</small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="assets/js/theme-toggle.js"></script>
+    <script src="assets/js/animations.js"></script>
+</body>
+
+</html>

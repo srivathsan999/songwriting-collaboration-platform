@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - SongStart</title>
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top glass-card mx-3 mt-3">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="index.html"><i
+                    class="bi bi-music-note-beamed me-2"></i> SongStart</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html">Home Default</a></li>
+                            <li><a class="dropdown-item" href="home-2.html">Home Variant</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="features.html">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="how-it-works.html">How It Works</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="community.html">Community</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <button class="btn btn-link text-body p-0" id="theme-toggle"><i
+                            class="bi bi-moon-stars-fill fs-5"></i></button>
+                    <a href="login.html" class="btn btn-outline-primary btn-sm d-none d-lg-block">Log In</a>
+                    <a href="signup.html" class="btn btn-primary btn-sm d-none d-lg-block">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section text-center pb-0">
+        <div class="container fade-up">
+            <h1 class="display-4 fw-bold">Songwriting Tips & News</h1>
+            <p class="lead text-secondary-color mx-auto" style="max-width: 600px;">Expert advice on music production,
+                lyric writing, and the music business.</p>
+        </div>
+    </header>
+
+    <section class="section-padding">
+        <div class="container">
+            <!-- Featured Post -->
+            <div class="row align-items-center mb-5 glass-card p-4 rounded-4 fade-up mx-0">
+                <div class="col-lg-6 ps-0">
+                    <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=80"
+                        class="img-fluid rounded-4 shadow w-100" alt="Featured">
+                </div>
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <span class="badge bg-primary mb-2">Editor's Pick</span>
+                    <h2 class="fw-bold mb-3"><a href="blog-details.html" class="text-decoration-none text-reset">How to
+                            Overcome Writer's Block: 5 Proven Techniques</a></h2>
+                    <p class="text-secondary-color mb-4">Staring at a blank page? Here are five strategies used by
+                        Grammy-winning songwriters to get the creative juices flowing again.</p>
+                    <div class="d-flex align-items-center">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=64&h=64&q=80"
+                            class="rounded-circle me-3" width="40" height="40">
+                        <div>
+                            <small class="fw-bold d-block">Sarah Jenkins</small>
+                            <small class="text-muted">Jan 24, 2026 • 5 min read</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4 stagger-container">
+                <!-- Post 1 -->
+                <div class="col-md-4 stagger-item">
+                    <div class="card glass-card h-100 border-0 hover-lift">
+                        <img src="https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?auto=format&fit=crop&w=600&h=400&q=80"
+                            class="card-img-top rounded-top-lg" alt="Post 1">
+                        <div class="card-body p-4">
+                            <span class="badge bg-secondary mb-2">Production</span>
+                            <h5 class="card-title fw-bold"><a href="blog-details.html"
+                                    class="text-decoration-none text-reset">Mixing Vocals for Beginners</a></h5>
+                            <p class="card-text text-secondary-color">Learn the basics of EQ, compression, and reverb to
+                                make your vocals shine.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Post 2 -->
+                <div class="col-md-4 stagger-item">
+                    <div class="card glass-card h-100 border-0 hover-lift">
+                        <img src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?auto=format&fit=crop&w=600&h=400&q=80"
+                            class="card-img-top rounded-top-lg" alt="Post 2">
+                        <div class="card-body p-4">
+                            <span class="badge bg-accent mb-2">industry</span>
+                            <h5 class="card-title fw-bold"><a href="blog-details.html"
+                                    class="text-decoration-none text-reset">Understanding Music Royalties</a></h5>
+                            <p class="card-text text-secondary-color">A deep dive into mechanical, performance, and sync
+                                royalties in the streaming era.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Post 3 -->
+                <div class="col-md-4 stagger-item">
+                    <div class="card glass-card h-100 border-0 hover-lift">
+                        <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=600&h=400&q=80"
+                            class="card-img-top rounded-top-lg" alt="Post 3">
+                        <div class="card-body p-4">
+                            <span class="badge bg-success mb-2">Inspiration</span>
+                            <h5 class="card-title fw-bold"><a href="blog-details.html"
+                                    class="text-decoration-none text-reset">Top 10 Chord Progressions</a></h5>
+                            <p class="card-text text-secondary-color">Use these emotional chord progressions to write
+                                your next hit ballad.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <nav aria-label="Page navigation" class="mt-5 fade-up">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer mt-auto">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="navbar-brand d-block mb-3" href="#">
+                        <i class="bi bi-music-note-beamed me-2"></i> SongStart
+                    </a>
+                    <p class="text-secondary-color">Empowering songwriters and producers to collaborate seamlessly
+                        globally.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="text-secondary-color fs-5"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-secondary-color fs-5"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-secondary-color fs-5"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-2">
+                    <h5>Platform</h5>
+                    <a href="features.html" class="footer-link">Features</a>
+                    <a href="pricing.html" class="footer-link">Pricing</a>
+                    <a href="how-it-works.html" class="footer-link">How it Works</a>
+                    <a href="community.html" class="footer-link">Community</a>
+                </div>
+                <div class="col-md-6 col-lg-2">
+                    <h5>Company</h5>
+                    <a href="about.html" class="footer-link">About Us</a>
+                    <a href="blog.html" class="footer-link">Blog</a>
+                    <a href="contact.html" class="footer-link">Contact</a>
+                    <a href="#" class="footer-link">Careers</a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <h5>Stay Updated</h5>
+                    <p class="text-secondary-color fs-sm">Subscribe to our newsletter for songwriting tips.</p>
+                    <form class="d-flex gap-2">
+                        <input type="email" class="form-control" placeholder="Email address">
+                        <button class="btn btn-primary">Join</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-top border-light mt-5 pt-4 text-center text-secondary-color">
+                <small>&copy; 2026 SongStart Inc. All rights reserved.</small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="assets/js/theme-toggle.js"></script>
+    <script src="assets/js/animations.js"></script>
+</body>
+
+</html>

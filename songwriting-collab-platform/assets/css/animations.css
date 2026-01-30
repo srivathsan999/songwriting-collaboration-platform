@@ -1,0 +1,41 @@
+/* 
+ * Songwriting Collaboration Platform - Animations
+ * Uses GSAP classes or CSS animations where simple
+ */
+
+/* Fade Up Class for GSAP target */
+.fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+/* Hover Lift */
+.hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Pulse (Subtle) */
+@keyframes pulse-soft {
+    0% {
+        box-shadow: 0 0 0 0 rgba(124, 58, 237, 0.4);
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgba(124, 58, 237, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(124, 58, 237, 0);
+    }
+}
+
+.btn-pulse:hover {
+    animation: pulse-soft 2s infinite;
+}
+
+/* Stagger reveals handled by JS */

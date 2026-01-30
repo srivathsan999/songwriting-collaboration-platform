@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community - SongStart</title>
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top glass-card mx-3 mt-3">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="index.html"><i
+                    class="bi bi-music-note-beamed me-2"></i> SongStart</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html">Home Default</a></li>
+                            <li><a class="dropdown-item" href="home-2.html">Home Variant</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="features.html">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="how-it-works.html">How It Works</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="community.html">Community</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <button class="btn btn-link text-body p-0" id="theme-toggle"><i
+                            class="bi bi-moon-stars-fill fs-5"></i></button>
+                    <a href="login.html" class="btn btn-outline-primary btn-sm d-none d-lg-block">Log In</a>
+                    <a href="signup.html" class="btn btn-primary btn-sm d-none d-lg-block">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section text-center pb-0">
+        <div class="container fade-up">
+            <h1 class="display-4 fw-bold">Connect with Musicians</h1>
+            <p class="lead text-secondary-color mx-auto" style="max-width: 600px;">Find your next collaborator, join
+                challenges, and get feedback.</p>
+        </div>
+    </header>
+
+    <!-- Top Creators -->
+    <section class="section-padding">
+        <div class="container">
+            <h3 class="fw-bold mb-4 fade-up">Featured Creators</h3>
+            <div class="row g-4 stagger-container">
+                <!-- Creator 1 -->
+                <div class="col-md-3 col-6 stagger-item">
+                    <div class="card glass-card border-0 text-center p-4 hover-lift">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&h=200&q=80"
+                            class="rounded-circle mx-auto mb-3 shadow" width="100" height="100">
+                        <h5 class="mb-1">Sarah Jenkins</h5>
+                        <p class="text-secondary-color small">Vocalist • Pop</p>
+                        <button class="btn btn-sm btn-outline-primary rounded-pill">Connect</button>
+                    </div>
+                </div>
+                <!-- Creator 2 -->
+                <div class="col-md-3 col-6 stagger-item">
+                    <div class="card glass-card border-0 text-center p-4 hover-lift">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=200&h=200&q=80"
+                            class="rounded-circle mx-auto mb-3 shadow" width="100" height="100">
+                        <h5 class="mb-1">David Chen</h5>
+                        <p class="text-secondary-color small">Producer • Lo-Fi</p>
+                        <button class="btn btn-sm btn-outline-primary rounded-pill">Connect</button>
+                    </div>
+                </div>
+                <!-- Creator 3 -->
+                <div class="col-md-3 col-6 stagger-item">
+                    <div class="card glass-card border-0 text-center p-4 hover-lift">
+                        <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=200&h=200&q=80"
+                            class="rounded-circle mx-auto mb-3 shadow" width="100" height="100">
+                        <h5 class="mb-1">Maria Rodriguez</h5>
+                        <p class="text-secondary-color small">Lyricist • Hip-Hop</p>
+                        <button class="btn btn-sm btn-outline-primary rounded-pill">Connect</button>
+                    </div>
+                </div>
+                <!-- Creator 4 -->
+                <div class="col-md-3 col-6 stagger-item">
+                    <div class="card glass-card border-0 text-center p-4 hover-lift">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&h=200&q=80"
+                            class="rounded-circle mx-auto mb-3 shadow" width="100" height="100">
+                        <h5 class="mb-1">James Wright</h5>
+                        <p class="text-secondary-color small">Guitarist • Rock</p>
+                        <button class="btn btn-sm btn-outline-primary rounded-pill">Connect</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Tracks / Challenges -->
+    <section class="section-padding bg-surface">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mb-5 mb-lg-0 fade-up">
+                    <h3 class="fw-bold mb-4">Latest Community Tracks</h3>
+                    <!-- Track Item -->
+                    <div class="d-flex align-items-center p-3 rounded-3 mb-3 border glass-card hover-lift">
+                        <div class="bg-primary-color text-white rounded p-3 me-3"><i class="bi bi-play-fill fs-4"></i>
+                        </div>
+                        <div class="flex-grow-1">
+                            <h6 class="mb-0">Summer Vibes (Demo)</h6>
+                            <small class="text-secondary-color">by @sarahj + @davidc</small>
+                        </div>
+                        <div class="text-end">
+                            <small class="text-secondary-color">3:42</small>
+                            <div class="text-primary-color"><i class="bi bi-heart-fill"></i> 124</div>
+                        </div>
+                    </div>
+                    <!-- Track Item -->
+                    <div class="d-flex align-items-center p-3 rounded-3 mb-3 border glass-card hover-lift">
+                        <div class="bg-secondary text-white rounded p-3 me-3"><i class="bi bi-play-fill fs-4"></i></div>
+                        <div class="flex-grow-1">
+                            <h6 class="mb-0">Midnight Rain</h6>
+                            <small class="text-secondary-color">by @maria_r</small>
+                        </div>
+                        <div class="text-end">
+                            <small class="text-secondary-color">2:15</small>
+                            <div class="text-primary-color"><i class="bi bi-heart"></i> 45</div>
+                        </div>
+                    </div>
+                    <!-- Track Item -->
+                    <div class="d-flex align-items-center p-3 rounded-3 mb-3 border glass-card hover-lift">
+                        <div class="bg-accent text-white rounded p-3 me-3"><i class="bi bi-play-fill fs-4"></i></div>
+                        <div class="flex-grow-1">
+                            <h6 class="mb-0">Guitar Riff Idea #44</h6>
+                            <small class="text-secondary-color">by @james_guitar</small>
+                        </div>
+                        <div class="text-end">
+                            <small class="text-secondary-color">0:58</small>
+                            <div class="text-primary-color"><i class="bi bi-heart"></i> 89</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 px-lg-4 fade-up">
+                    <div class="shadow p-4 rounded-4 bg-primary-color text-white">
+                        <h4>Monthly Challenge</h4>
+                        <p class="opacity-75">Theme: <strong>Retro Synthwave</strong></p>
+                        <p class="small opacity-75">Create a 30s loop using only stock plugins. Winner gets a free Pro
+                            year.</p>
+                        <button class="btn btn-light text-primary-color w-100 fw-bold mt-2">Submit Entry</button>
+                    </div>
+                    <div class="mt-4 p-4 glass-card rounded-4">
+                        <h5>Discussions</h5>
+                        <ul class="list-unstyled mt-3">
+                            <li class="mb-3 border-bottom pb-2">
+                                <a href="#" class="text-decoration-none fw-bold">Best mic for under $200?</a><br>
+                                <small class="text-secondary-color">15 replies • 2h ago</small>
+                            </li>
+                            <li class="mb-3 border-bottom pb-2">
+                                <a href="#" class="text-decoration-none fw-bold">Looking for a drummer!</a><br>
+                                <small class="text-secondary-color">8 replies • 5h ago</small>
+                            </li>
+                            <li>
+                                <a href="#" class="text-decoration-none fw-bold">Feedback on my mix</a><br>
+                                <small class="text-secondary-color">22 replies • 1d ago</small>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer mt-auto">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="navbar-brand d-block mb-3" href="#">
+                        <i class="bi bi-music-note-beamed me-2"></i> SongStart
+                    </a>
+                    <p class="text-secondary-color">Empowering songwriters and producers to collaborate seamlessly
+                        globally.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="text-secondary-color fs-5"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-secondary-color fs-5"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-secondary-color fs-5"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-2">
+                    <h5>Platform</h5>
+                    <a href="features.html" class="footer-link">Features</a>
+                    <a href="pricing.html" class="footer-link">Pricing</a>
+                    <a href="how-it-works.html" class="footer-link">How it Works</a>
+                    <a href="community.html" class="footer-link">Community</a>
+                </div>
+                <div class="col-md-6 col-lg-2">
+                    <h5>Company</h5>
+                    <a href="about.html" class="footer-link">About Us</a>
+                    <a href="blog.html" class="footer-link">Blog</a>
+                    <a href="contact.html" class="footer-link">Contact</a>
+                    <a href="#" class="footer-link">Careers</a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <h5>Stay Updated</h5>
+                    <p class="text-secondary-color fs-sm">Subscribe to our newsletter for songwriting tips.</p>
+                    <form class="d-flex gap-2">
+                        <input type="email" class="form-control" placeholder="Email address">
+                        <button class="btn btn-primary">Join</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-top border-light mt-5 pt-4 text-center text-secondary-color">
+                <small>&copy; 2026 SongStart Inc. All rights reserved.</small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="assets/js/theme-toggle.js"></script>
+    <script src="assets/js/animations.js"></script>
+</body>
+
+</html>

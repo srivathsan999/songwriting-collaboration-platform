@@ -1,0 +1,102 @@
+/* 
+ * Songwriting Collaboration Platform - Dark Mode Styles
+ * Activates when [data-theme="dark"] is present on <html> or <body>
+ */
+
+[data-theme="dark"] {
+    /* Colors - Dark Mode Override */
+    --bg-body: #020617;
+    --surface: #0f172a;
+    /* Slightly lighter than bg for contrast */
+    --surface-glass: rgba(15, 23, 42, 0.6);
+    --border-color: #1E293B;
+
+    --text-primary: #F8FAFC;
+    --text-secondary: #CBD5E1;
+}
+
+[data-theme="dark"] .glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .navbar {
+    background-color: rgba(2, 6, 23, 0.9);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .form-control {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: var(--border-color);
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .form-control:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: var(--primary);
+}
+
+[data-theme="dark"] .footer {
+    background-color: var(--bg-body);
+    border-top-color: var(--border-color);
+}
+
+/* Form Select Dark Mode */
+[data-theme="dark"] .form-select {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: var(--border-color);
+    color: var(--text-primary);
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+}
+
+[data-theme="dark"] .form-select:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: var(--primary);
+}
+
+[data-theme="dark"] .form-select option {
+    background-color: var(--bg-body);
+    color: var(--text-primary);
+}
+
+/* Input Group Text override */
+[data-theme="dark"] .input-group-text {
+    border-color: var(--border-color);
+    color: var(--text-secondary);
+}
+
+/* Placeholder Color Override */
+[data-theme="dark"] ::placeholder {
+    color: #64748B !important;
+    opacity: 1;
+}
+
+/* Checkbox (Tick box) Override */
+[data-theme="dark"] .form-check-input {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: var(--border-color);
+}
+
+[data-theme="dark"] .form-check-input:checked {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+/* Text Muted Override */
+[data-theme="dark"] .text-muted {
+    color: #94A3B8 !important;
+}
+
+/* Primary Color Text lighten for dark mode if needed, but keeping consistent is usually better. 
+   If user says "logo not compatible", it might be visibility. 
+   Let's slightly startle the primary text color to be brighter. */
+[data-theme="dark"] .text-primary-color {
+    color: #A78BFA;
+    /* Lighter purple */
+}
+
+[data-theme="dark"] .navbar-brand {
+    color: #A78BFA !important;
+}

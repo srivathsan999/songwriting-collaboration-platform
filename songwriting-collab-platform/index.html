@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="The ultimate songwriting collaboration platform for musicians, lyricists, and producers. Collaborate in real-time.">
+    <title>SongStart - Songwriting Collaboration Platform</title>
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top glass-card mx-3 mt-3">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="bi bi-music-note-beamed me-2"></i> SongStart
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Home
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html">Home Default</a></li>
+                            <li><a class="dropdown-item" href="home-2.html">Home Variant</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="features.html">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="how-it-works.html">How It Works</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="community.html">Community</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <button class="btn btn-link text-body p-0" id="theme-toggle" aria-label="Toggle Dark Mode">
+                        <i class="bi bi-moon-stars-fill fs-5"></i>
+                    </button>
+                    <a href="login.html" class="btn btn-outline-primary btn-sm d-none d-lg-block">Log In</a>
+                    <a href="signup.html" class="btn btn-primary btn-sm d-none d-lg-block">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0 fade-up">
+                    <span class="badge bg-primary-color mb-3 rounded-pill px-3 py-2">New: AI Lyric Assistant</span>
+                    <h1 class="display-3 fw-bold mb-4">Collaborate on Songs <span
+                            class="text-primary-color">Anywhere</span></h1>
+                    <p class="lead mb-4 text-secondary-color">Connect directly with producers, lyricists, and vocalists.
+                        Share stems, co-write lyrics, and manage royalties in one secure place.</p>
+                    <div class="d-flex gap-3">
+                        <a href="signup.html" class="btn btn-primary btn-lg btn-pulse">Start Writing Free</a>
+                        <a href="#demo" class="btn btn-outline-primary btn-lg"><i class="bi bi-play-circle me-2"></i>
+                            Watch Demo</a>
+                    </div>
+                    <div class="mt-5 d-flex align-items-center gap-3">
+                        <div class="d-flex">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=64&h=64&q=80"
+                                class="rounded-circle border border-2 border-white" width="40" height="40" alt="User">
+                            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=64&h=64&q=80"
+                                class="rounded-circle border border-2 border-white ms-n2" width="40" height="40"
+                                alt="User" style="margin-left: -15px;">
+                            <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=64&h=64&q=80"
+                                class="rounded-circle border border-2 border-white ms-n2" width="40" height="40"
+                                alt="User" style="margin-left: -15px;">
+                        </div>
+                        <small class="text-secondary-color">Used by 10,000+ Songwriters</small>
+                    </div>
+                </div>
+                <div class="col-lg-6 position-relative fade-up" style="transition-delay: 0.2s;">
+                    <div class="glass-card p-2">
+                        <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=800&q=80"
+                            alt="Studio Collaboration" class="img-fluid rounded-3 shadow-lg">
+                    </div>
+                    <!-- Floater 1 -->
+                    <div class="glass-card position-absolute bg-surface p-3 rounded-3 shadow"
+                        style="bottom: 20px; left: -20px; max-width: 250px;">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="bg-primary-color rounded-circle p-2 text-white"><i class="bi bi-mic-fill"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-0">Vocal Stems</h6>
+                                <small class="text-success"><i class="bi bi-check-circle-fill"></i> Synced</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Grid -->
+    <section class="section-padding bg-surface">
+        <div class="container">
+            <div class="text-center mb-5 fade-up">
+                <h2 class="fw-bold">Everything You Need to Create</h2>
+                <p class="text-secondary-color">Built strict for music creators, not documents.</p>
+            </div>
+            <div class="row g-4 stagger-container">
+                <div class="col-md-4 stagger-item">
+                    <div class="card glass-card h-100 border-0 p-4 hover-lift">
+                        <div class="fs-1 text-primary-color mb-3"><i class="bi bi-file-earmark-music"></i></div>
+                        <h4>Lyric Co-Writing</h4>
+                        <p class="text-secondary-color">Real-time collaborative text editor tailored for lyrics with
+                            version history and rhyme dictionary.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 stagger-item">
+                    <div class="card glass-card h-100 border-0 p-4 hover-lift">
+                        <div class="fs-1 text-accent mb-3"><i class="bi bi-cloud-upload"></i></div>
+                        <h4>Stem Management</h4>
+                        <p class="text-secondary-color">Upload high-res audio files. Version control for your DAW
+                            exports and mixes.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 stagger-item">
+                    <div class="card glass-card h-100 border-0 p-4 hover-lift">
+                        <div class="fs-1 text-secondary-color mb-3"><i class="bi bi-people"></i></div>
+                        <h4>Split Sheets</h4>
+                        <p class="text-secondary-color">Automatically generate and sign split sheets. ensure everyone
+                            gets paid correctly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Split -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0 fade-up">
+                    <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=800&q=80"
+                        alt="Writing Session" class="img-fluid rounded-4 shadow">
+                </div>
+                <div class="col-lg-6 ps-lg-5 fade-up">
+                    <h2 class="fw-bold mb-4">Focus on the Music, Not the Admin</h2>
+                    <ul class="list-unstyled">
+                        <li class="d-flex mb-3">
+                            <i class="bi bi-check-circle-fill text-primary-color me-3 fs-5"></i>
+                            <div>
+                                <h5>Organized Projects</h5>
+                                <p class="text-secondary-color">Keep lyrics, demos, and notes in one dedicated folder
+                                    per song.</p>
+                            </div>
+                        </li>
+                        <li class="d-flex mb-3">
+                            <i class="bi bi-check-circle-fill text-primary-color me-3 fs-5"></i>
+                            <div>
+                                <h5>Secure Sharing</h5>
+                                <p class="text-secondary-color">Share private links with labels or managers without user
+                                    accounts.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community / CTA -->
+    <section class="section-padding bg-primary-color text-white text-center">
+        <div class="container fade-up">
+            <h2 class="display-5 fw-bold mb-4">Join 25,000+ Creators Today</h2>
+            <p class="lead mb-5 opacity-75">Start your next hit song with SongStart. Free forever for solo artists.</p>
+            <a href="signup.html"
+                class="btn btn-light btn-lg text-primary-color fw-bold px-5 py-3 rounded-pill hover-lift">Get Started
+                Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="navbar-brand d-block mb-3" href="#">
+                        <i class="bi bi-music-note-beamed me-2"></i> SongStart
+                    </a>
+                    <p class="text-secondary-color">Empowering songwriters and producers to collaborate seamlessly
+                        globally.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="text-secondary-color fs-5"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-secondary-color fs-5"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-secondary-color fs-5"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-2">
+                    <h5>Platform</h5>
+                    <a href="features.html" class="footer-link">Features</a>
+                    <a href="pricing.html" class="footer-link">Pricing</a>
+                    <a href="how-it-works.html" class="footer-link">How it Works</a>
+                    <a href="community.html" class="footer-link">Community</a>
+                </div>
+                <div class="col-md-6 col-lg-2">
+                    <h5>Company</h5>
+                    <a href="about.html" class="footer-link">About Us</a>
+                    <a href="blog.html" class="footer-link">Blog</a>
+                    <a href="contact.html" class="footer-link">Contact</a>
+                    <a href="#" class="footer-link">Careers</a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <h5>Stay Updated</h5>
+                    <p class="text-secondary-color fs-sm">Subscribe to our newsletter for songwriting tips.</p>
+                    <form class="d-flex gap-2">
+                        <input type="email" class="form-control" placeholder="Email address">
+                        <button class="btn btn-primary">Join</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-top border-light mt-5 pt-4 text-center text-secondary-color">
+                <small>&copy; 2026 SongStart Inc. All rights reserved.</small>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="assets/js/theme-toggle.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
