@@ -16,7 +16,7 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top glass-card mx-3 mt-3">
+    <nav class="navbar navbar-expand-xl fixed-top glass-card mx-3 mt-3">
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center" href="index.html"><i
                     class="bi bi-music-note-beamed me-2"></i> SongStart</a>
@@ -63,43 +63,51 @@
             <h3 class="fw-bold mb-4 fade-up">Featured Creators</h3>
             <div class="row g-4 stagger-container">
                 <!-- Creator 1 -->
-                <div class="col-md-3 col-6 stagger-item">
-                    <div class="card glass-card border-0 text-center p-4 hover-lift">
+                <div class="col-lg-3 col-md-6 stagger-item">
+                    <div class="card glass-card border-0 text-center p-4 h-100 hover-lift">
                         <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&h=200&q=80"
                             class="rounded-circle mx-auto mb-3 shadow" width="100" height="100">
                         <h5 class="mb-1">Sarah Jenkins</h5>
                         <p class="text-secondary-color small">Vocalist • Pop</p>
-                        <button class="btn btn-sm btn-outline-primary rounded-pill">Connect</button>
+                        <div class="mt-auto">
+                            <button class="btn btn-sm btn-outline-primary rounded-pill w-100">Connect</button>
+                        </div>
                     </div>
                 </div>
                 <!-- Creator 2 -->
-                <div class="col-md-3 col-6 stagger-item">
-                    <div class="card glass-card border-0 text-center p-4 hover-lift">
+                <div class="col-lg-3 col-md-6 stagger-item">
+                    <div class="card glass-card border-0 text-center p-4 h-100 hover-lift">
                         <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=200&h=200&q=80"
                             class="rounded-circle mx-auto mb-3 shadow" width="100" height="100">
                         <h5 class="mb-1">David Chen</h5>
                         <p class="text-secondary-color small">Producer • Lo-Fi</p>
-                        <button class="btn btn-sm btn-outline-primary rounded-pill">Connect</button>
+                        <div class="mt-auto">
+                            <button class="btn btn-sm btn-outline-primary rounded-pill w-100">Connect</button>
+                        </div>
                     </div>
                 </div>
                 <!-- Creator 3 -->
-                <div class="col-md-3 col-6 stagger-item">
-                    <div class="card glass-card border-0 text-center p-4 hover-lift">
+                <div class="col-lg-3 col-md-6 stagger-item">
+                    <div class="card glass-card border-0 text-center p-4 h-100 hover-lift">
                         <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=200&h=200&q=80"
                             class="rounded-circle mx-auto mb-3 shadow" width="100" height="100">
                         <h5 class="mb-1">Maria Rodriguez</h5>
                         <p class="text-secondary-color small">Lyricist • Hip-Hop</p>
-                        <button class="btn btn-sm btn-outline-primary rounded-pill">Connect</button>
+                        <div class="mt-auto">
+                            <button class="btn btn-sm btn-outline-primary rounded-pill w-100">Connect</button>
+                        </div>
                     </div>
                 </div>
                 <!-- Creator 4 -->
-                <div class="col-md-3 col-6 stagger-item">
-                    <div class="card glass-card border-0 text-center p-4 hover-lift">
+                <div class="col-lg-3 col-md-6 stagger-item">
+                    <div class="card glass-card border-0 text-center p-4 h-100 hover-lift">
                         <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&h=200&q=80"
                             class="rounded-circle mx-auto mb-3 shadow" width="100" height="100">
                         <h5 class="mb-1">James Wright</h5>
                         <p class="text-secondary-color small">Guitarist • Rock</p>
-                        <button class="btn btn-sm btn-outline-primary rounded-pill">Connect</button>
+                        <div class="mt-auto">
+                            <button class="btn btn-sm btn-outline-primary rounded-pill w-100">Connect</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -112,41 +120,61 @@
             <div class="row">
                 <div class="col-lg-8 mb-5 mb-lg-0 fade-up">
                     <h3 class="fw-bold mb-4">Latest Community Tracks</h3>
-                    <!-- Track Item -->
+                    <!-- Track Item 1 -->
                     <div class="d-flex align-items-center p-3 rounded-3 mb-3 border glass-card hover-lift">
-                        <div class="bg-primary-color text-white rounded p-3 me-3"><i class="bi bi-play-fill fs-4"></i>
+                        <div class="position-relative me-3">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=64&h=64&q=80"
+                                class="rounded-3 shadow-sm" width="56" height="56" alt="Sarah Jenkins">
+                            <div class="position-absolute bottom-0 end-0 bg-primary-color text-white rounded-circle p-1 shadow-sm"
+                                style="font-size: 0.6rem; transform: translate(30%, 30%);">
+                                <i class="bi bi-play-fill"></i>
+                            </div>
                         </div>
                         <div class="flex-grow-1">
-                            <h6 class="mb-0">Summer Vibes (Demo)</h6>
+                            <h6 class="mb-0 fw-bold">Summer Vibes (Demo)</h6>
                             <small class="text-secondary-color">by @sarahj + @davidc</small>
                         </div>
                         <div class="text-end">
-                            <small class="text-secondary-color">3:42</small>
-                            <div class="text-primary-color"><i class="bi bi-heart-fill"></i> 124</div>
+                            <small class="text-secondary-color d-block">3:42</small>
+                            <div class="text-primary-color small fw-bold"><i class="bi bi-heart-fill"></i> 124</div>
                         </div>
                     </div>
-                    <!-- Track Item -->
+                    <!-- Track Item 2 -->
                     <div class="d-flex align-items-center p-3 rounded-3 mb-3 border glass-card hover-lift">
-                        <div class="bg-secondary text-white rounded p-3 me-3"><i class="bi bi-play-fill fs-4"></i></div>
+                        <div class="position-relative me-3">
+                            <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=64&h=64&q=80"
+                                class="rounded-3 shadow-sm" width="56" height="56" alt="Maria Rodriguez">
+                            <div class="position-absolute bottom-0 end-0 bg-secondary text-white rounded-circle p-1 shadow-sm"
+                                style="font-size: 0.6rem; transform: translate(30%, 30%);">
+                                <i class="bi bi-play-fill"></i>
+                            </div>
+                        </div>
                         <div class="flex-grow-1">
-                            <h6 class="mb-0">Midnight Rain</h6>
+                            <h6 class="mb-0 fw-bold">Midnight Rain</h6>
                             <small class="text-secondary-color">by @maria_r</small>
                         </div>
                         <div class="text-end">
-                            <small class="text-secondary-color">2:15</small>
-                            <div class="text-primary-color"><i class="bi bi-heart"></i> 45</div>
+                            <small class="text-secondary-color d-block">2:15</small>
+                            <div class="text-primary-color small fw-bold"><i class="bi bi-heart"></i> 45</div>
                         </div>
                     </div>
-                    <!-- Track Item -->
+                    <!-- Track Item 3 (Guitar Riff) -->
                     <div class="d-flex align-items-center p-3 rounded-3 mb-3 border glass-card hover-lift">
-                        <div class="bg-accent text-white rounded p-3 me-3"><i class="bi bi-play-fill fs-4"></i></div>
+                        <div class="position-relative me-3">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=64&h=64&q=80"
+                                class="rounded-3 shadow-sm" width="56" height="56" alt="James Wright">
+                            <div class="position-absolute bottom-0 end-0 bg-accent text-white rounded-circle p-1 shadow-sm"
+                                style="font-size: 0.6rem; transform: translate(30%, 30%);">
+                                <i class="bi bi-play-fill"></i>
+                            </div>
+                        </div>
                         <div class="flex-grow-1">
-                            <h6 class="mb-0">Guitar Riff Idea #44</h6>
+                            <h6 class="mb-0 fw-bold">Guitar Riff Idea #44</h6>
                             <small class="text-secondary-color">by @james_guitar</small>
                         </div>
                         <div class="text-end">
-                            <small class="text-secondary-color">0:58</small>
-                            <div class="text-primary-color"><i class="bi bi-heart"></i> 89</div>
+                            <small class="text-secondary-color d-block">0:58</small>
+                            <div class="text-primary-color small fw-bold"><i class="bi bi-heart"></i> 89</div>
                         </div>
                     </div>
                 </div>
@@ -192,9 +220,9 @@
                     <p class="text-secondary-color">Empowering songwriters and producers to collaborate seamlessly
                         globally.</p>
                     <div class="d-flex gap-3 mt-4">
-                        <a href="#" class="text-secondary-color fs-5"><i class="bi bi-twitter"></i></a>
-                        <a href="#" class="text-secondary-color fs-5"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="text-secondary-color fs-5"><i class="bi bi-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-2">

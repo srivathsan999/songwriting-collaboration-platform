@@ -63,6 +63,7 @@
 
             .dashboard-container {
                 padding-top: 0.5rem;
+                overflow-x: hidden;
             }
         }
 
@@ -341,16 +342,18 @@
             padding-top: 1rem;
             border-top: 1px solid var(--border-color);
             flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
         }
 
         @media (max-width: 768px) {
             .lyric-stats {
-                gap: 1rem;
+                gap: 1.5rem;
             }
 
             .lyric-stats .stat-item {
-                flex: 1 1 calc(50% - 0.5rem);
-                min-width: calc(50% - 0.5rem);
+                flex: 1 1 auto;
+                min-width: 80px;
             }
 
             .lyric-stats .stat-item.ms-auto {
@@ -364,17 +367,20 @@
         .stat-item {
             display: flex;
             flex-direction: column;
+            align-items: center;
         }
 
         .stat-value {
             font-size: 1.5rem;
             font-weight: 700;
             color: var(--primary);
+            line-height: 1.2;
         }
 
         .stat-label {
             font-size: 0.85rem;
             color: var(--text-secondary);
+            font-weight: 500;
         }
 
         .collaborator-indicator {
@@ -427,28 +433,66 @@
             flex-wrap: wrap;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
             .workspace-header {
                 flex-direction: column;
-                align-items: flex-start;
-                margin-bottom: 1.5rem;
-            }
-
-            .workspace-header>div:last-child {
-                width: 100%;
-                justify-content: space-between;
+                align-items: stretch;
+                margin-bottom: 2rem;
+                gap: 1.5rem;
             }
 
             .project-selector {
                 width: 100%;
+                justify-content: space-between;
+                flex-wrap: wrap;
             }
 
             .project-selector h2 {
-                font-size: 1.5rem;
+                font-size: 1.75rem;
+            }
+
+            .project-selector select {
+                max-width: 300px !important;
+                flex: 1;
+            }
+
+            .workspace-header>.d-flex {
+                width: 100%;
+                justify-content: space-between;
+                background: var(--surface-glass);
+                padding: 0.75rem;
+                border-radius: var(--radius-md);
+                border: 1px solid var(--border-color);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .workspace-header {
+                padding: 0 0.5rem;
+            }
+
+            .project-selector {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.75rem;
             }
 
             .project-selector select {
                 max-width: 100% !important;
+            }
+
+            .workspace-header>.d-flex {
+                flex-wrap: wrap;
+                gap: 0.5rem;
+            }
+
+            .collaborator-indicator {
+                width: 100%;
+                justify-content: center;
+                margin-bottom: 0.5rem;
+            }
+
+            .workspace-header .btn {
                 flex: 1;
             }
         }
@@ -614,7 +658,7 @@
 
                         <!-- Track Controls -->
                         <div class="row g-3">
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-xl-3">
                                 <div class="card glass-card border-0 p-3">
                                     <div class="d-flex align-items-center justify-content-between mb-2">
                                         <small class="text-secondary-color">Master Volume</small>
@@ -623,7 +667,7 @@
                                     <input type="range" class="form-range" value="75" min="0" max="100">
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-xl-3">
                                 <div class="card glass-card border-0 p-3">
                                     <div class="d-flex align-items-center justify-content-between mb-2">
                                         <small class="text-secondary-color">Reverb</small>
@@ -632,7 +676,7 @@
                                     <input type="range" class="form-range" value="25" min="0" max="100">
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-xl-3">
                                 <div class="card glass-card border-0 p-3">
                                     <div class="d-flex align-items-center justify-content-between mb-2">
                                         <small class="text-secondary-color">Compression</small>
@@ -641,7 +685,7 @@
                                     <input type="range" class="form-range" value="40" min="0" max="100">
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-6 col-xl-3">
                                 <div class="card glass-card border-0 p-3">
                                     <div class="d-flex align-items-center justify-content-between mb-2">
                                         <small class="text-secondary-color">EQ</small>
@@ -728,26 +772,20 @@ Until the song is done</textarea>
                         <!-- Lyric Stats -->
                         <div class="lyric-stats">
                             <div class="stat-item">
-                                <span class="stat-value" id="wordCount">156</span>
+                                <span class="stat-value" id="wordCount">95</span>
                                 <span class="stat-label">Words</span>
                             </div>
                             <div class="stat-item">
-                                <span class="stat-value" id="lineCount">24</span>
+                                <span class="stat-value" id="lineCount">25</span>
                                 <span class="stat-label">Lines</span>
                             </div>
                             <div class="stat-item">
-                                <span class="stat-value" id="charCount">856</span>
+                                <span class="stat-value" id="charCount">547</span>
                                 <span class="stat-label">Characters</span>
                             </div>
                             <div class="stat-item">
                                 <span class="stat-value">4</span>
                                 <span class="stat-label">Sections</span>
-                            </div>
-                            <div class="stat-item ms-auto">
-                                <span class="stat-value text-success">
-                                    <i class="bi bi-cloud-check-fill"></i>
-                                </span>
-                                <span class="stat-label">Auto-saved</span>
                             </div>
                         </div>
                     </div>

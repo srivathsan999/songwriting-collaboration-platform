@@ -151,6 +151,30 @@ a {
     color: var(--primary) !important;
 }
 
+@media (max-width: 1199.98px) {
+    .navbar-collapse {
+        background: var(--surface);
+        padding: 1.5rem;
+        border-radius: var(--radius-lg);
+        margin-top: 1rem;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        border: 1px solid var(--border-color);
+    }
+
+    .navbar-nav {
+        margin-bottom: 1.5rem;
+    }
+
+    .nav-item {
+        padding: 0.5rem 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-item:last-child {
+        border-bottom: none;
+    }
+}
+
 /* Footer */
 .footer {
     background-color: var(--surface);
@@ -171,6 +195,18 @@ a {
 
 .footer-link:hover {
     color: var(--primary);
+}
+
+.social-icon {
+    color: var(--text-secondary);
+    font-size: 1.25rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.social-icon:hover {
+    color: var(--primary);
+    transform: translateY(-3px);
 }
 
 /* Form Styles */
@@ -216,4 +252,8 @@ a {
 
 ::-webkit-scrollbar-thumb:hover {
     background: var(--primary);
+}
+
+.bg-gradient-dark {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 60%, transparent 100%);
 }
