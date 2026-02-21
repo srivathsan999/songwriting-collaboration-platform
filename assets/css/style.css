@@ -8,7 +8,8 @@
     /* Colors */
     --primary: #7C3AED;
     --primary-hover: #6D28D9;
-    --secondary: #0EA5E9;
+    --secondary: #A78BFA;
+    /* Light purple instead of blue */
     --accent: #F59E0B;
 
     --bg-body: #F8FAFC;
@@ -69,7 +70,7 @@ a {
 }
 
 .text-secondary-color {
-    color: var(--secondary);
+    color: var(--text-secondary);
 }
 
 .text-accent {
@@ -226,7 +227,7 @@ a {
 
 /* Hero Section */
 .hero-section {
-    padding: 6rem 0;
+    padding: 10rem 0 6rem;
     position: relative;
     overflow: hidden;
 }
